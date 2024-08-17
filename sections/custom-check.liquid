@@ -1,0 +1,20 @@
+<h2>{{ section.settings.check-text }}</h2>
+
+{% schema %}
+{
+  "name": "Custom-check",
+  "settings": [
+    {
+      "type": "text",
+      "id": "check-text",
+      "label": "Text",
+      "default": "Hello Guys"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom-Check"
+    }
+  ]
+}
+{% endschema %}
