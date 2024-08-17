@@ -3568,7 +3568,7 @@ details-disclosure > details {
 }
 
 
- /* .websenseprodivider{
+  .websenseprodivider{
   overflow:hidden;
   position:relative;
   }
@@ -3591,9 +3591,9 @@ details-disclosure > details {
   background-size: 100% calc(2vw + 90px);
   }
   }
-  */
+  
 
-
+/*
 .websenseprodivider{
 overflow:hidden;
 position:relative;
@@ -3617,6 +3617,7 @@ background-position: 50% 100%;  background-image: url('data:image/svg+xml;charse
 background-size: 100% calc(2vw + 90px);
 }
 }
+*/
  
 
 /*
