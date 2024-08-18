@@ -1,19 +1,7 @@
 {{ 'component-slideshow.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 
-
-<style>
-  <style>
-    p.announcement-bar__message.h5 span {
-        font-size: 14px !important;
-    }
-     
-    p.announcement-bar__message.h5 {
-        padding: 5px 0 !important;
-        min-height: auto !important;
-    }
-    </style> 
-    
+  
 {%- liquid
   assign social_icons = true
   if settings.social_facebook_link == blank and settings.social_instagram_link == blank and settings.social_youtube_link == blank and settings.social_tiktok_link == blank and settings.social_twitter_link == blank and settings.social_pinterest_link == blank and settings.social_snapchat_link == blank and settings.social_tumblr_link == blank and settings.social_vimeo_link == blank
