@@ -1,5 +1,5 @@
 <h2>{{ section.settings.check-text }}</h2>
-
+<img src="{{ section.settings.img | image_url: width:'80px' }}" alt="Unavialble" width=80, height=80>
 {% schema %}
 {
   "name": "Custom-check",
@@ -9,6 +9,11 @@
       "id": "check-text",
       "label": "Text",
       "default": "Hello Guys"
+    },
+    {
+      "type": "image_picker",
+      "id": "img",
+      "label": "Image",
     }
   ],
   "presets": [
