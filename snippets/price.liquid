@@ -127,17 +127,8 @@
     </div>
     {%- if show_badges -%}
       <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
-        {{price.price_max | minus: price.price_min | times: 100 | divided_by:  price.compare_at_price }}% OFF
-      </span>
-        {% comment %}
         {{ 'products.product.on_sale' | t }}
       </span>
-      {% endcomment %}
-
-      {% comment %}
- {{ 'products.product.on_sale' | t }} 
- {% endcomment %}
-
 
       <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">
         {{ 'products.product.sold_out' | t }}
