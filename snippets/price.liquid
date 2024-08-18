@@ -125,7 +125,7 @@
     </div>
     {%- if show_badges -%}
       <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
-        {{price.price_max | minus: price.price_min | times: 100 | divided_by:  price.price_max }}% OFF
+        {{price.price_max | minus: price.price_min | times: 100 | divided_by:  price.compare_at_price }}% OFF
       </span>
         {% comment %}
         {{ 'products.product.on_sale' | t }}
