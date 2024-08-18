@@ -53,7 +53,7 @@
             >
           {%- endif -%}
            
-          <marquee behavior="scroll" direction="left" scrollamount="20"> <p class="announcement-bar__message h5">
+          <marquee behavior="scroll" direction="left" scrollamount="40"> <p class="announcement-bar__message h5">
             <span>{{ section.blocks.first.settings.text | escape }}</span>
             {%- if section.blocks.first.settings.link != blank -%}
               {% render 'icon-arrow' %}
@@ -118,7 +118,7 @@
                       >
                              {%- endif -%}
  
-                             <marquee behavior="scroll" direction="left" scrollamount="20"> <p class="announcement-bar__message h5">
+                             <marquee behavior="scroll" direction="left" scrollamount="40"> <p class="announcement-bar__message h5">
                       <span>{{ block.settings.text | escape }}</span>
                       {%- if block.settings.link != blank -%}
                         {% render 'icon-arrow' %}
