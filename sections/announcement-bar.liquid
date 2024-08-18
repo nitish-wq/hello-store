@@ -100,7 +100,6 @@
                         class="announcement-bar__link link link--text focus-inset animate-arrow"
                       >
                     {%- endif -%}
-                    <marquee behavior="scroll" direction="left" scrollamount="20">
  
                       <p class="announcement-bar__message h5">
                       <span>{{ block.settings.text | escape }}</span>
@@ -108,7 +107,6 @@
                         {% render 'icon-arrow' %}
                       {%- endif -%}
                     </p>
-                    </marquee>
                     {%- if block.settings.link != blank -%}
                       </a>
                     {%- endif -%}
