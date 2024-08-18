@@ -298,7 +298,8 @@
     "custom_check_AwNPPW": {
       "type": "custom-check",
       "settings": {
-        "check-text": ""
+        "check-text": "Hello",
+        "img": "shopify:\/\/shop_images\/img_dog2-removebg-preview.png"
       }
     }
   },
