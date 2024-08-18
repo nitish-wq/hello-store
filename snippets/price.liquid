@@ -124,11 +124,9 @@
       </small>
     </div>
     {%- if show_badges -%}
-{% if price.compare_at_price_max > price.price_max %}
-  <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
-    {{ price.compare_at_price_max | minus: price.price_max | times: 100 | divided_by:  price.compare_at_price_max }}% OFF
-  </span>
-{% endif %}
+      <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
+        {{price.price_max | minus: price.price_min | times: 100 | divided_by:  price.price_max }}% OFF
+      </span>
         {% comment %}
         {{ 'products.product.on_sale' | t }}
       </span>
