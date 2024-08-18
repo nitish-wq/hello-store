@@ -1,6 +1,17 @@
 {{ 'component-slideshow.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 
+<style>
+  p.announcement-bar__message.h5 span {
+      font-size: 14px !important;
+  }
+   
+  p.announcement-bar__message.h5 {
+      padding: 5px 0 !important;
+      min-height: auto !important;
+  }
+  </style> 
+  
   
 {%- liquid
   assign social_icons = true
