@@ -30,54 +30,29 @@
        },
      });   
      </script>
- 
-=======
+
+<script>
+ var swiper = new Swiper(".swiper", {
+      slidesPerView: 2,
+      spaceBetween: 10,
+      freeMode: true,
+      loop: true,
+    navigation: {
+        nextEl: ".swiper-next-button",
+       
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });   
+</script>
 
 
->>>>>>> c05be9a51ae5fcd95c466a692c5a4ba4ae83af3e
+
 {% schema %}
   {
     "name": "Section name",
-    "settings": [
-      {
-        "type": "image_picker",
-        "id:":"image-1",
-        "label":"Image"
-      },
-      {
-        "type": "image_picker",
-        "id:":"image-2",
-        "label":"Image"
-      },
-      {
-        "type": "image_picker",
-        "id:":"image-3",
-        "label":"Image"
-      },
-      {
-        "type": "image_picker",
-        "id:":"image-4",
-        "label":"Image"
-      },
-      {
-        "type": "image_picker",
-        "id:":"image-5",
-        "label":"Image"
-      },
-      {
-        "type": "image_picker",
-        "id:":"image-6",
-        "label":"Image"
-      },
-      {
-        "type": "image_picker",
-        "id:":"image-7",
-        "label":"Image"
-      }
-    ],
-    "presets":[{
-    "name":"Custom-Slideshow-2"
-    }
-  ]
+    "settings": []
   }
 {% endschema %}
