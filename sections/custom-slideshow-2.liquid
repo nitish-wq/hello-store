@@ -19,18 +19,14 @@
 </style>
     <div class="swiper">
         <div class="swiper-wrapper">
-           <img src="{{ section.settings.image-1 | image_url: width: '250px' }}" alt="Image 1" class="image-with-text__image">
-        
-                <img src="{{ section.settings.image-2 | image_url: width: '250px' }}" alt="Image 2" class="image-with-text__image">
-          
-                <img src="{{ section.settings.image-3 | image_url: width: '250px' }}" alt="Image 3" class="image-with-text__image">
-          
             <div class="swiper-slide">
                 <img src="{{ section.settings.image-1 | image_url: width: '250px' }}" alt="Image 1" class="image-with-text__image">
         
                 <img src="{{ section.settings.image-2 | image_url: width: '250px' }}" alt="Image 2" class="image-with-text__image">
           
+           
                 <img src="{{ section.settings.image-3 | image_url: width: '250px' }}" alt="Image 3" class="image-with-text__image">
+          
           
                 <img src="{{ section.settings.image-4 | image_url: width: '250px' }}" alt="Image 4" class="image-with-text__image">
             </div>
@@ -45,7 +41,7 @@
 
 <script>
  var swiper = new Swiper(".swiper", {
-      slidesPerView: 1,
+      slidesPerView: 2,
       spaceBetween: 10,
       freeMode: true,
       loop: true,
