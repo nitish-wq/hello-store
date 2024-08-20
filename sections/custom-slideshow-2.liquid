@@ -21,13 +21,14 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <img src="{{ section.settings.image-1 | image_url: width: '250px' }}" alt="Image 1" class="image-with-text__image">
-        
+            </div>
+            <div class="swiper-slide">
                 <img src="{{ section.settings.image-2 | image_url: width: '250px' }}" alt="Image 2" class="image-with-text__image">
-          
-           
+            </div>
+            <div class="swiper-slide">
                 <img src="{{ section.settings.image-3 | image_url: width: '250px' }}" alt="Image 3" class="image-with-text__image">
-          
-          
+            </div>
+            <div class="swiper-slide">
                 <img src="{{ section.settings.image-4 | image_url: width: '250px' }}" alt="Image 4" class="image-with-text__image">
             </div>
         </div>
@@ -36,6 +37,26 @@
         <!-- Add Navigation -->
         <div class="swiper-next-button">Next</div>
     </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var swiper = new Swiper(".swiper", {
+                slidesPerView: 2,
+                spaceBetween: 10,
+                freeMode: true,
+                loop: true,
+                navigation: {
+                    nextEl: ".swiper-next-button",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        });
+    </script>
 
 
 
