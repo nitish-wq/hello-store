@@ -248,20 +248,12 @@
         "height": "adapt",
         "desktop_image_width": "small"
       }
-    },
-    "custom_check_AwNPPW": {
-      "type": "custom-check",
-      "settings": {
-        "check-text": "Hello",
-        "img": "shopify:\/\/shop_images\/img_dog2-removebg-preview.png"
-      }
     }
   },
   "order": [
     "slideshow_tpXhc9",
     "image_banner_h44BAB",
     "featured-collection-0",
-    "custom_image_with_text_ajKrA9",
-    "custom_check_AwNPPW"
+    "custom_image_with_text_ajKrA9"
   ]
 }
