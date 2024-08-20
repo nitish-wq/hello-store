@@ -1,3 +1,58 @@
+<<<<<<< HEAD
+<div class="swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="{{ section.settings.image-1 | image_url: width:'80px' }}" alt="Network error" class="image-with-text__image" width="80px" height="80px">
+      <img src="{{ section.settings.image-2 | image_url: width:'80px' }}" alt="Network error" class="image-with-text__image" width="80px" height="80px">
+      <img src="{{ section.settings.image-3| image_url: width:'80px' }}" alt="Network error" class="image-with-text__image" width="80px" height="80px">
+      <img src="{{ section.settings.image-4 | image_url: width:'80px' }}" alt="Network error" class="image-with-text__image" width="80px" height="80px">
+      <img src="{{ section.settings.image-5 | image_url: width:'80px' }}" alt="Network error" class="image-with-text__image" width="80px" height="80px">
+      <img src="{{ section.settings.image-6 | image_url: width:'80px' }}" alt="Network error" class="image-with-text__image" width="80px" height="80px">
+      <img src="{{ section.settings.image-7 | image_url: width:'80px' }}" alt="Network error" class="image-with-text__image" width="80px" height="80px">
+
+</div>
+</div>
+</div>
+
+
+<script>
+  var swiper = new Swiper(".swiper", {
+       slidesPerView: 2,
+       spaceBetween: 10,
+       freeMode: true,
+       loop: true,
+     navigation: {
+         nextEl: ".swiper-next-button",
+        
+       },
+       pagination: {
+         el: ".swiper-pagination",
+         clickable: true,
+       },
+     });   
+     </script>
+ 
+=======
+<script>
+ var swiper = new Swiper(".swiper", {
+      slidesPerView: 2,
+      spaceBetween: 10,
+      freeMode: true,
+      loop: true,
+    navigation: {
+        nextEl: ".swiper-next-button",
+       
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });   
+</script>
+
+
+
+>>>>>>> c05be9a51ae5fcd95c466a692c5a4ba4ae83af3e
 {% schema %}
   {
     "name": "Section name",
