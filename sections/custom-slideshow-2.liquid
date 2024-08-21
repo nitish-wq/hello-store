@@ -76,42 +76,23 @@
   {
     "name": "Section name",
     "settings": [
-      {
-      "type": "image_picker",
-      "id": "image-1",
-      "label": "t:sections.image-banner.settings.image.label"
-    },
-      {
-        "type": "image_picker",
-        "id":"image-2",
-        "label":"Image"
-      },
-      {
-        "type": "image_picker",
-        "id":"image-3",
-        "label":"Image"
-      },
-      {
-        "type": "image_picker",
-        "id":"image-4",
-        "label":"Image"
-      },
-      {
-        "type": "image_picker",
-        "id":"image-5",
-        "label":"Image"
-      },
-      {
-        "type": "image_picker",
-        "id":"image-6",
-        "label":"Image"
-      },
-      {
-        "type": "image_picker",
-        "id":"image-7",
-        "label":"Image"
-      }
     ],
+     "blocks": [
+
+        {
+      "type": "image",
+      "name": "Image",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+     },
+       
+     ],
     "presets":[{
     "name":"Custom-Slideshow-2"
     }
