@@ -20,6 +20,12 @@
     <div class="swiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
+                          {%- for block in section.blocks -%}
+              {% case block.type %}
+                        {% when 'image' %}
+            <img src="{{ block.settings.image | image_url: width:'80px' }}" alt="Network error" class="image-with-text__image" width="80px" height="80px">
+
+{% comment %}
                 <img src="{{ section.settings.image-1 | image_url: width: '250px' }}" alt="Image 1" class="image-with-text__image" width="" height="">
             </div>
             <div class="swiper-slide">
@@ -32,6 +38,11 @@
                 <img src="{{ section.settings.image-4 | image_url: width: '250px' }}" alt="Image 4" class="image-with-text__image" width="" height="">
             </div>
         </div>
+                
+
+                {% endcomment %}
+ {%- endcase -%}
+                 {%- endfor -%}
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
         <!-- Add Navigation -->
