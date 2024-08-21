@@ -263,11 +263,39 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/cat-women.jpg"
           }
+        },
+        "image_fWNxtU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cat-women.jpg"
+          }
+        },
+        "image_kbtttG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cat-women.jpg"
+          }
+        },
+        "image_mH8kMf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cat-women.jpg"
+          }
+        },
+        "image_y4pREk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cat-women.jpg"
+          }
         }
       },
       "block_order": [
         "image_wPbdUp",
-        "image_KNE3rX"
+        "image_KNE3rX",
+        "image_fWNxtU",
+        "image_kbtttG",
+        "image_mH8kMf",
+        "image_y4pREk"
       ],
       "settings": {
       }
