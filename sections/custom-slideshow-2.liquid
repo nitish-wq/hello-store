@@ -23,7 +23,7 @@
                           {%- for block in section.blocks -%}
               {% case block.type %}
                         {% when 'image' %}
-            <img src="{{ block.settings.image | image_url: width:'80px' }}" alt="Network error" class="image-with-text__image" width="80px" height="80px">
+            <img src="{{ block.settings.image | image_url: width:'250px' }}" alt="Network error" class="image-with-text__image" width="80px" height="80px">
 
 {% comment %}
                 <img src="{{ section.settings.image-1 | image_url: width: '250px' }}" alt="Image 1" class="image-with-text__image" width="" height="">
@@ -82,7 +82,6 @@
         {
       "type": "image",
       "name": "Image",
-      "limit": 1,
       "settings": [
         {
           "type": "image_picker",
