@@ -31,7 +31,7 @@
             {% case block.type %}
                 {% when 'image' %}
                     <div class="swiper-slide">
-                        <img src="{{ block.settings.image | image_url: width:'250' }}" alt="Image" class="image-with-text__image" width="250" height="250">
+                        <img src="{{ block.settings.image | image_url: width:'' }}" alt="Image" class="image-with-text__image" width="" height="">
                     </div>
             {% endcase %}
         {%- endfor -%}
