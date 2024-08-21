@@ -257,10 +257,17 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/cat-women.jpg"
           }
+        },
+        "image_KNE3rX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cat-women.jpg"
+          }
         }
       },
       "block_order": [
-        "image_wPbdUp"
+        "image_wPbdUp",
+        "image_KNE3rX"
       ],
       "settings": {
       }
