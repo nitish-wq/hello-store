@@ -20,57 +20,38 @@
   }
 
 </style>
-    <div class="swiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                          {%- for block in section.blocks -%}
-              {% case block.type %}
-                        {% when 'image' %}
-            <img src="{{ block.settings.image | image_url: width:'250px' }}" alt="Network error" class="image-with-text__image" width="80px" height="80px">
-
-{% comment %}
-                <img src="{{ section.settings.image-1 | image_url: width: '250px' }}" alt="Image 1" class="image-with-text__image" width="" height="">
-            </div>
-            <div class="swiper-slide">
-                <img src="{{ section.settings.image-2 | image_url: width: '250px' }}" alt="Image 2" class="image-with-text__image" width="" height="">
-            </div>
-            <div class="swiper-slide">
-                <img src="{{ section.settings.image-3 | image_url: width: '250px' }}" alt="Image 3" class="image-with-text__image" width="" height="">
-            </div>
-            <div class="swiper-slide">
-                <img src="{{ section.settings.image-4 | image_url: width: '250px' }}" alt="Image 4" class="image-with-text__image" width="" height="">
-            </div>
-        </div>
-                
-
-                {% endcomment %}
- {%- endcase -%}
-                 {%- endfor -%}
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- Add Navigation -->
-        <div class="swiper-next-button"></div>
+<div class="swiper">
+    <div class="swiper-wrapper">
+        {%- for block in section.blocks -%}
+            {% case block.type %}
+                {% when 'image' %}
+                    <div class="swiper-slide">
+                        <img src="{{ block.settings.image | image_url: width:'250' }}" alt="Image" class="image-with-text__image" width="250" height="250">
+                    </div>
+            {% endcase %}
+        {%- endfor -%}
     </div>
-
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Navigation -->
+    <div class="swiper-next-button"></div>
+</div>
 
 
 <script>
- var swiper = new Swiper(".swiper", {
-      slidesPerView: 3,
-      spaceBetween: 10,
-      freeMode: true,
-      loop: true,
-    navigation: {
-        nextEl: ".swiper-next-button",
-       
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });   
+    var swiper = new Swiper(".swiper", {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        freeMode: true,
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-next-button",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
 </script>
 
 
