@@ -299,7 +299,9 @@
       ],
       "settings": {
         "padding_top": 52,
-        "padding_bottom": 52
+        "padding_bottom": 52,
+        "text": "T-Shirt",
+        "heading": "T-shirt"
       }
     }
   },
