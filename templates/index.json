@@ -286,13 +286,6 @@
             "image": "shopify:\/\/shop_images\/cat-women.jpg",
             "image_text": "T-Shirt"
           }
-        },
-        "image_y4pREk": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/cat-women.jpg",
-            "image_text": "T-Shirt"
-          }
         }
       },
       "block_order": [
@@ -300,8 +293,7 @@
         "image_KNE3rX",
         "image_fWNxtU",
         "image_kbtttG",
-        "image_mH8kMf",
-        "image_y4pREk"
+        "image_mH8kMf"
       ],
       "settings": {
         "padding_top": 20,
