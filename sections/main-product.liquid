@@ -1,6 +1,6 @@
 
 {%- style -%}
-/* media-gallery#MediaGallery-{{ section.id }} {
+ media-gallery#MediaGallery-{{ section.id }} {
    display:flex;
     flex-direction:row-reverse
   }
@@ -17,9 +17,9 @@ slider-component#GalleryViewer-{{ section.id }} {
   flex-direction:column;
     }
 
-   ul#Slider-Thumbnails li{
+   ul#Slider-Thumbnails-{{ section.id }} li{
       width:100%
-   } */
+   } 
 {%- endstyle -%}
 
 <product-info
