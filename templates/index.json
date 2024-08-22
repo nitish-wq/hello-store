@@ -255,49 +255,44 @@
         "image_wPbdUp": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cat-women.jpg",
-            "text": "Hello",
-            "heading": "ewif"
+            "image": "shopify:\/\/shop_images\/cat-women.jpg"
           }
         },
         "image_KNE3rX": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cat-women.jpg",
-            "text": "bhjct",
-            "heading": "vhgc"
+            "image": "shopify:\/\/shop_images\/cat-women.jpg"
           }
         },
         "image_fWNxtU": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cat-women.jpg",
-            "text": "",
-            "heading": ""
+            "image": "shopify:\/\/shop_images\/cat-women.jpg"
           }
         },
         "image_kbtttG": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cat-women.jpg",
-            "text": "bgty",
-            "heading": "gft"
+            "image": "shopify:\/\/shop_images\/cat-women.jpg"
           }
         },
         "image_mH8kMf": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cat-women.jpg",
-            "text": "",
-            "heading": ""
+            "image": "shopify:\/\/shop_images\/cat-women.jpg"
           }
         },
         "image_y4pREk": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cat-women.jpg",
-            "text": "",
-            "heading": ""
+            "image": "shopify:\/\/shop_images\/cat-women.jpg"
+          }
+        },
+        "text_TdXcph": {
+          "type": "text",
+          "settings": {
+            "text": "hcrdts",
+            "heading": "yfdtrdj"
           }
         }
       },
@@ -307,7 +302,8 @@
         "image_fWNxtU",
         "image_kbtttG",
         "image_mH8kMf",
-        "image_y4pREk"
+        "image_y4pREk",
+        "text_TdXcph"
       ],
       "settings": {
         "padding_top": 88,
