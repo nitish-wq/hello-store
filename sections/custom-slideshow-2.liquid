@@ -43,7 +43,7 @@
             {% case block.type %}
                 {% when 'image' %}
                     <div class="swiper-slide">
-                        <img src="{{ block.settings.image | image_url: width: '250px' }}" alt="Image" class="image-with-text__image" width="250px" height="250px">
+                        <img src="{{ block.settings.image | image_url: width: '288px' }}" alt="Image" class="image-with-text__image" width="288px" height="250px">
                             <div class="image-text">
                                 <p>{{ block.settings.image_text }}</p>
                             </div>          
@@ -64,7 +64,7 @@
 <script>
     var swiper = new Swiper(".swiper", {
         slidesPerView: 5,
-        spaceBetween: 0,
+       /* spaceBetween: 0, */
         freeMode: true,
         loop: true,
         navigation: {
