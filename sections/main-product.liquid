@@ -23,6 +23,22 @@ media-gallery#MediaGallery-{{ section.id }} {
    display:flex;
     flex-direction:row-reverse
   }
+
+slider-component#GalleryViewer-{{ section.id }} {
+  width:75%
+}
+
+  slider-component#GalleryThumbnail-{{ section.id }} {
+  width:25%
+  }
+
+  ul#Slider-Thumbnails-{{ section.id }} {
+  flex-direction:column;
+    }
+
+   ul#Slider-Thumbnails li{
+      width:100%
+   }
 {%- endstyle -%}
 
 <product-info
