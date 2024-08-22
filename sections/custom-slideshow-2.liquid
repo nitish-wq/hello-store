@@ -42,8 +42,9 @@
             {% case block.type %}
                 {% when 'image' %}
                     <div class="swiper-slide">
-                      <div class="content">
+                     
                         <img src="{{ block.settings.image | image_url: width: '250px' }}" alt="Image" class="image-with-text__image" width="250px" height="250px">
+                       <div class="content">
                       <h2>{{ block.settings.text }}</h2>
                       <h2>{{ block.settings.heading }}</h2>
                     </div>
