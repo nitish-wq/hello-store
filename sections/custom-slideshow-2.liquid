@@ -9,13 +9,13 @@
 
 
 {%- style -%}
-  .section-{{ section.id }}-padding {
+  .slideshow-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
   @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
+    .slideshow-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
@@ -23,7 +23,7 @@
 {%- endstyle -%}
 
 
-<div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
+<div class="slideshow-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
 <div class="swiper">
     <div class="swiper-wrapper">
         {%- for block in section.blocks -%}
