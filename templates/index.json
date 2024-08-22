@@ -255,37 +255,49 @@
         "image_wPbdUp": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cat-women.jpg"
+            "image": "shopify:\/\/shop_images\/cat-women.jpg",
+            "text": "Hello",
+            "heading": "ewif"
           }
         },
         "image_KNE3rX": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cat-women.jpg"
+            "image": "shopify:\/\/shop_images\/cat-women.jpg",
+            "text": "",
+            "heading": ""
           }
         },
         "image_fWNxtU": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cat-women.jpg"
+            "image": "shopify:\/\/shop_images\/cat-women.jpg",
+            "text": "",
+            "heading": ""
           }
         },
         "image_kbtttG": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cat-women.jpg"
+            "image": "shopify:\/\/shop_images\/cat-women.jpg",
+            "text": "",
+            "heading": ""
           }
         },
         "image_mH8kMf": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cat-women.jpg"
+            "image": "shopify:\/\/shop_images\/cat-women.jpg",
+            "text": "",
+            "heading": ""
           }
         },
         "image_y4pREk": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cat-women.jpg"
+            "image": "shopify:\/\/shop_images\/cat-women.jpg",
+            "text": "",
+            "heading": ""
           }
         }
       },
@@ -299,9 +311,7 @@
       ],
       "settings": {
         "padding_top": 52,
-        "padding_bottom": 52,
-        "text": "T-Shirt",
-        "heading": "T-shirt"
+        "padding_bottom": 52
       }
     }
   },
