@@ -4,11 +4,15 @@
     width:100% !important;
     height:250px !important;
     margin-left:1.5rem !important;
-    padding-top:10px;
-    padding-bottom:10rem
+  }
+
+  .Slideshow-2{
+    padding-top:20px;
+    padding-bottom:20px
   }
 </style>
 
+<div class="Slideshow-2">
 <div class="swiper">
     <div class="swiper-wrapper">
         {%- for block in section.blocks -%}
@@ -24,6 +28,7 @@
     <div class="swiper-pagination"></div>
     <!-- Add Navigation -->
     <div class="swiper-next-button"></div>
+</div>
 </div>
 
 <script>
