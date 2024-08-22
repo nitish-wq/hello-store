@@ -3,11 +3,12 @@
     display:flex;
     width:100% !important;
     height:250px !important;
-    margin-left:1.5rem !important
+    margin-left:1.5rem !important;
+    padding-top:10px;
+    padding-bottom:10px
   }
 </style>
 
-<div class="swiper-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
 <div class="swiper">
     <div class="swiper-wrapper">
         {%- for block in section.blocks -%}
@@ -23,7 +24,6 @@
     <div class="swiper-pagination"></div>
     <!-- Add Navigation -->
     <div class="swiper-next-button"></div>
-</div>
 </div>
 
 <script>
