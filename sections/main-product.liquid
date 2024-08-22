@@ -1,12 +1,35 @@
+<style>
+  media-gallery#MediaGallery-template--23262133420347__main{
+    display:flex;
+    flex-direction:row-reverse
+  }
+  */
+  slider-component#GalleryViewer-template--23262133420347__main{
+    width:75%
+  }
+  slider-component#GalleryThumbnails-template--23262133420347__main{
+   width:25%
+  }
+  
+  ul#Slider-Thumbnails-template--23262133420347__main{
+    flex-direction:column
+  }
+
+  ul#Slider-Thumbnails-template--23262133420347__main li{
+    width:100%
+  }
+ 
+</style>
+
 {%- style -%}
-  media-gallery#MediaGallery-{{ section.id }} {
+media-gallery#MediaGallery-{{ section.id }} {
    display:flex;
     flex-direction:row-reverse
   }
 
-  slider-component#GalleryViewer-{{ section.id }} {
+slider-component#GalleryViewer-{{ section.id }} {
   width:75%
- }
+}
 
   slider-component#GalleryThumbnails-{{ section.id }} {
   width:25%
@@ -16,7 +39,7 @@
   flex-direction:column;
     }
 
-   ul#Slider-Thumbnails-{{ section.id }} li{
+   ul#Slider-Thumbnails li{
       width:100%
    }
 {%- endstyle -%}
