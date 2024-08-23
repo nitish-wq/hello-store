@@ -297,7 +297,8 @@
         "image_LCGa7C": {
           "type": "image",
           "settings": {
-            "image_text": ""
+            "image": "shopify:\/\/shop_images\/cat-women.jpg",
+            "image_text": "T-Shirt"
           }
         }
       },
