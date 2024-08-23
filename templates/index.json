@@ -290,7 +290,8 @@
         "image_4XkdF6": {
           "type": "image",
           "settings": {
-            "image_text": ""
+            "image": "shopify:\/\/shop_images\/cat-women.jpg",
+            "image_text": "T-Shirt"
           }
         },
         "image_LCGa7C": {
