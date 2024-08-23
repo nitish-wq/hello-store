@@ -255,49 +255,50 @@
         "image_wPbdUp": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cat-women.jpg"
+            "image": "shopify:\/\/shop_images\/cat-women.jpg",
+            "image_text": "Hello"
           }
         },
         "image_KNE3rX": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cat-women.jpg"
+            "image": "shopify:\/\/shop_images\/cat-women.jpg",
+            "image_text": ""
           }
         },
         "image_fWNxtU": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cat-women.jpg"
+            "image": "shopify:\/\/shop_images\/cat-women.jpg",
+            "image_text": ""
           }
         },
         "image_kbtttG": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cat-women.jpg"
+            "image": "shopify:\/\/shop_images\/cat-women.jpg",
+            "image_text": ""
           }
         },
         "image_mH8kMf": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cat-women.jpg"
+            "image": "shopify:\/\/shop_images\/cat-women.jpg",
+            "image_text": ""
           }
         },
         "image_4XkdF6": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cat-women.jpg"
+            "image": "shopify:\/\/shop_images\/cat-women.jpg",
+            "image_text": ""
           }
         },
         "image_LCGa7C": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cat-women.jpg"
-          }
-        },
-        "text_MV9ajp": {
-          "type": "text",
-          "settings": {
-            "image_text": "Helo"
+            "image": "shopify:\/\/shop_images\/cat-women.jpg",
+            "image_text": ""
           }
         }
       },
@@ -308,8 +309,7 @@
         "image_kbtttG",
         "image_mH8kMf",
         "image_4XkdF6",
-        "image_LCGa7C",
-        "text_MV9ajp"
+        "image_LCGa7C"
       ],
       "settings": {
         "padding_top": 20,
