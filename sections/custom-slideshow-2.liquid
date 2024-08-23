@@ -32,11 +32,10 @@
                 {% when 'image' %}
                     <div class="swiper-slide">
                         <img src="{{ block.settings.image | image_url: width: '260px' }}" alt="Image" class="image-with-text__image" width="260px" height="">
+                            <div class="image-text">
+                                <p>{{ block.settings.image_text }}</p>
+                            </div>          
                     </div>
-                 {% when 'text' %}
-               <div class="image-text">
-                 <p>{{ block.settings.image_text }}</p>
-                  </div>          
             {% endcase %}
                 {%- endfor -%}
     </div>
@@ -102,15 +101,8 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image"
-        }  
-      ]
-     },
-
-         {
-      "type": "text",
-      "name": "Text",
-      "settings": [
-         {
+        },
+        {
           "type": "text",
           "id": "image_text",
           "label": "Text"
