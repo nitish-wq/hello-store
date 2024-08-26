@@ -65,6 +65,15 @@
                                 {{ grandchildlink.title | escape }}
                               </a>
 
+                              {%- assign collection_0 = section.settings.collection_0 -%}
+{{ collection_0.title }}
+{%- assign collection_0_products = collection_0.products -%}
+{%- for product in collection_0_products -%}
+  {{ product.title }}
+  {{ product.description }}
+{%- endfor -%}
+
+
    {% render 'card-product',
                     card_product: product,
                     media_aspect_ratio: section.settings.image_ratio,
@@ -109,4 +118,5 @@
     {%- endfor -%}
   </ul>
 </nav>
+
 
