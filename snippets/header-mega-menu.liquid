@@ -39,7 +39,7 @@
                 >
                   {%- for childlink in link.links -%}
                     <li>
-                      <h2>Shop {{ childlink.title | escape }}</h2>
+                      <h2>{{ childlink.title | escape }}</h2>
                       <a
                         id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
                         href="{{ childlink.url }}"
