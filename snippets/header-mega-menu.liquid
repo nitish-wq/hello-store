@@ -67,9 +67,7 @@
 
 {%- assign product_list_0 = section.settings.product_list_0 -%}
 {%- for product in product_list_0 -%}
-  {{ product.title }}
-  <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
-  {{ product.description }}
+ {% render 'card-product' %}
 {%- endfor -%}
 
 
