@@ -67,9 +67,25 @@
 
 {%- assign product_list_0 = section.settings.product_list_0 -%}
 {%- for product in product_list_0 -%}
-  {{ product.title }}
-  <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
-  {{ product.description }}
+        <div class="card__content">
+          <div class="card__information">  
+            <h3
+              class="card__heading"
+              {% if product.featured_media == null and settings.card_style == 'standard' %}
+                id="title-{{ section_id }}-{{ card_product.id }}"
+              {% endif %}
+            >
+              <a
+                href="{{ product.url }}"
+                id="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }}"
+                class="full-unstyled-link"
+                aria-labelledby="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }} NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
+              >
+                {{ product.title | escape }}
+              </a>
+            </h3>
+          </div>
+        </div>
 {%- endfor -%}
 
 
