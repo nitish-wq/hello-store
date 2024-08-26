@@ -76,16 +76,17 @@
               {% endif %}
             >
               <a
-                href="{{ product.url }}"
-                id="StandardCardNoMediaLink-{{ section_id }}-{{ product.id }}"
+                href="{{ card_product.url }}"
+                id="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }}"
                 class="full-unstyled-link"
                 aria-labelledby="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }} NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
               >
-                {{ product.title | escape }}
+                {{ card_product.title | escape }}
               </a>
             </h3>
           </div>
         </div>
+  <
 {%- endfor -%}
 
 
