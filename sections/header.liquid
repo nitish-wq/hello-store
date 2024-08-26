@@ -185,6 +185,14 @@
         endif
       endif
     %}
+         {%- assign collection_0 = section.settings.collection_0 -%}
+{{ collection_0.title }}
+{%- assign collection_0_products = collection_0.products -%}
+{%- for product in collection_0_products -%}
+  {{ product.title }}
+  {{ product.description }}
+{%- endfor -%}
+
 
     {%- if section.settings.logo_position == 'middle-center' -%}
       {%- if request.page_type == 'index' -%}
@@ -456,8 +464,13 @@
 {
   "name": "t:sections.header.name",
   "class": "section-header",
-  "max_blocks": 3,
+  "max_blocks": 4,
   "settings": [
+     {
+      "type": "collection",
+      "label": "Collection 0",
+      "id": "collection_0"
+    },
     {
       "type": "select",
       "id": "logo_position",
