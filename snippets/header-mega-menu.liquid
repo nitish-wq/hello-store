@@ -65,12 +65,10 @@
                                 {{ grandchildlink.title | escape }}
                               </a>
 
-                                       {%- assign collection_0 = section.settings.collection_0 -%}
-{{ collection_0.title }}
-{%- assign collection_0_products = collection_0.products -%}
-{%- for product in collection_0_products -%}
+{%- assign product_list_0 = section.settings.product_list_0 -%}
+{%- for product in product_list_0 -%}
   {{ product.title }}
-      <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+  <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
   {{ product.description }}
 {%- endfor -%}
 
