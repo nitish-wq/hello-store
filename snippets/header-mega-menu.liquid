@@ -141,6 +141,7 @@
                       >
                         {{ childlink.title | escape }}
                       </a>
+
                       {%- if childlink.links != blank -%}
                         <ul class="list-unstyled" role="list">
                           {%- for grandchildlink in childlink.links -%}
@@ -159,6 +160,28 @@
                           {%- endfor -%}
                         </ul>
                       {%- endif -%}
+
+                      <!-- Add Collection Products -->
+                      {%- if childlink.type == 'collection' -%}
+                        {%- assign collection_handle = childlink.handle -%}
+                        {%- assign collection = collections[collection_handle] -%}
+                        {%- if collection.products.size > 0 -%}
+                          <ul class="list-unstyled collection-products" role="list">
+                            {%- for product in collection.products limit: 5 -%} <!-- Adjust limit as needed -->
+                              <li>
+                                <a
+                                  id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}-product-{{ product.handle }}"
+                                  href="{{ product.url }}"
+                                  class="mega-menu__link link"
+                                >
+                                  {{ product.title | escape }}
+                                </a>
+                              </li>
+                            {%- endfor -%}
+                          </ul>
+                        {%- endif -%}
+                      {%- endif -%}
+
                     </li>
                   {%- endfor -%}
                 </ul>
@@ -187,4 +210,3 @@
     {%- endfor -%}
   </ul>
 </nav>
-
