@@ -76,6 +76,11 @@
 
 {%- for collection in collection_list_0 -%}
   {{ collection.title }}
+
+    {%- if collection.featured_media -%}
+    <img src="{{ collection.featured_media | img_url: '300x300' }}" alt="{{ collection.title }}">
+  {%- endif -%}
+
   {%- for product in collection.products -%}
         <img src="{{ collection.featured_media | img_url: '300x300' }}" alt="{{ collection.title }}">
   {%- endfor -%}
