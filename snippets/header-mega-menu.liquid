@@ -173,23 +173,23 @@
                                 {{ grandchildlink.title | escape }}
                               </a>
 
-                        {% assign collection = collections['Shop Our Bestsellers'] %}
-                  {%- if collection.products_count > 1 -%}
-                    <li>
-                      <h4>{{ collection.title }}</h4>
-                      <ul class="product-grid">
-                        {%- for product in collection.products limit: 5 -%}
-                          <li class="product-grid__item">
-                            <a href="{{ product.url }}">
-                              <img src="{{ product.featured_image | img_url: '150x150' }}" alt="{{ product.title }}">
-                              <div>{{ product.title }}</div>
-                              <div class="price">{{ product.price | money }}</div>
-                            </a>
-                          </li>
-                        {%- endfor -%}
-                      </ul>
-                    </li>
-                  {%- endif -%}
+{% assign collection = collections['Shop Our Bestsellers'] %}
+{%- if collection and collection.products_count and collection.products_count > 0 -%}
+  <li>
+    <h4>{{ collection.title }}</h4>
+    <ul class="product-grid">
+      {%- for product in collection.products limit: 5 -%}
+        <li class="product-grid__item">
+          <a href="{{ product.url }}">
+            <img src="{{ product.featured_image | img_url: '150x150' }}" alt="{{ product.title }}">
+            <div>{{ product.title }}</div>
+            <div class="price">{{ product.price | money }}</div>
+          </a>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </li>
+{%- endif -%}
 
   
                             </li>
