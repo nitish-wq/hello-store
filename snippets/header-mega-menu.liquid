@@ -172,26 +172,20 @@
                               >
                                 {{ grandchildlink.title | escape }}
                               </a>
-
-{% assign collection = collections['Shop Our Bestsellers'] %}
-{%- if collection and collection.products_count and collection.products_count > 0 -%}
-  <li>
-    <h4>{{ collection.title }}</h4>
-    <ul class="product-grid">
-      {%- for product in collection.products limit: 5 -%}
-        <li class="product-grid__item">
-          <a href="{{ product.url }}">
-            <img src="{{ product.featured_image | img_url: '150x150' }}" alt="{{ product.title }}">
-            <div>{{ product.title }}</div>
-            <div class="price">{{ product.price | money }}</div>
-          </a>
-        </li>
-      {%- endfor -%}
-    </ul>
-  </li>
-{%- endif -%}
-
   
+                            <div class="grid product-grid contains-card contains-card--product">
+                              {%- for product in product_list  -%}
+                              <img src="{{ product.featured_media | image_url: width: '150px' }}" alt="{{ product.title }}" width="" height="">
+                              {{ product.title }}
+                                <div class="price-container">
+                                  <span class="visually-hidden visually-hidden--inline">Regular price</span>
+                                <s class="price-item price-item--regular">{{ product.price }}</s>
+                                  <span class="visually-hidden visually-hidden--inline">Sale price</span>
+                                <span class="price-item price-item--regular"> {{ product.compare_at_price }} </span>
+                                </div>
+                              
+                              {%- endfor -%}
+                            </div>
                             </li>
                           {%- endfor -%}
   
