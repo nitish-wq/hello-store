@@ -7,6 +7,7 @@
 
 
 
+  {%- assign product_list = section.settings.product_list -%}
 
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
@@ -64,20 +65,29 @@
                               >
                                 {{ grandchildlink.title | escape }}
                               </a>
-                              </li>
+  
+                            <div class="grid product-grid contains-card contains-card--product">
+                              {%- for product in product_list  -%}
+                              <img src="{{ product.featured_media | image_url: width: '150px' }}" alt="{{ product.title }}" width="" height="">
+                              {{ product.title }}
+                                <div class="price-container">
+                                  <span class="visually-hidden visually-hidden--inline">Regular price</span>
+                                <s class="price-item price-item--regular">{{ product.price }}</s>
+                                  <span class="visually-hidden visually-hidden--inline">Sale price</span>
+                                <span class="price-item price-item--regular"> {{ product.compare_at_price }} </span>
+                                </div>
+                              
+                              {%- endfor -%}
+                            </div>
+                            </li>
                           {%- endfor -%}
+
+                          
+  
                         </ul>
                       {%- endif -%}
                     </li>
                   {%- endfor -%}
-
-                  {%- assign collection_0 = section.settings.collection_0 -%}
-{%- assign collection_0_products = collection_0.products -%}
-{%- for product in collection_0_products -%}
- <img src="{{ collection_0.featured_image | img_url: '150x150' }}" alt="{{ product.title }}">
-
-{%- endfor -%}
-
                 </ul>
               </div>
             </details>
