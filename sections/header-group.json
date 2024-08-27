@@ -38,7 +38,7 @@
     "header": {
       "type": "header",
       "settings": {
-        "collection_0": "shop-our-bestsellers",
+        "collection_": "shop-our-bestsellers",
         "logo_position": "middle-left",
         "menu": "main-menu",
         "menu_type_desktop": "mega",
