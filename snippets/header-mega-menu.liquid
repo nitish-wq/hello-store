@@ -174,10 +174,7 @@
                               </a>
 
 {% assign collection = collections['Shop Our Bestsellers'] %}
-  if section.settings.collection.all_products_count > section.settings.products_to_show
-    assign products_to_display = section.settings.products_to_show
-    assign more_in_collection = true
-  endif
+{%- if collection and collection.products_count and collection.products_count > 0 -%}
   <li>
     <h4>{{ collection.title }}</h4>
     <ul class="product-grid">
@@ -192,7 +189,7 @@
       {%- endfor -%}
     </ul>
   </li>
-
+{%- endif -%}
 
   
                             </li>
