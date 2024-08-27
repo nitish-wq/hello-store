@@ -70,12 +70,11 @@
                               {{ product.title }}
                                 <div class="price-container">
                                 <s class="price-item price-item--regular">{{ product.price }}</s>
-                              {{ product.compare_at_price }}
+                                <span class="price-item price-item--regular"> {{ product.compare_at_price }} </span>
                                 </div>
                               
                               {%- endfor -%}
                             </div>
-
                             </li>
                           {%- endfor -%}
   
