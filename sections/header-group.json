@@ -38,8 +38,8 @@
     "header": {
       "type": "header",
       "settings": {
-        "collection_list_0": [
-          "shop-our-bestsellers"
+        "product_list_0": [
+          "new-shirt"
         ],
         "logo_position": "middle-left",
         "menu": "main-menu",
