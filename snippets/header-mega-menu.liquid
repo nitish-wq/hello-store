@@ -63,16 +63,15 @@
                               >
                                 {{ grandchildlink.title | escape }}
                               </a>
-  
-                            <div class="grid product-grid contains-card contains-card--product">
-                              {%- for product in product_list  -%}
-                              {{ product.title }}
-                                <div class="price-container">
-                                              <img src="{{ product.featured_image | img_url: '150x150' }}" alt="{{ product.title }}">
-                                </div>
 
-                              {%- endfor -%}
-                            </div>
+                              {%- assign product_list_0 = section.settings.product_list_0 -%}
+{%- for product in product_list_0 -%}
+  {{ product.title }}
+  {{ product.description }}
+{%- endfor -%}
+
+
+  
                             </li>
                           {%- endfor -%}
   
