@@ -63,13 +63,21 @@
                               >
                                 {{ grandchildlink.title | escape }}
                               </a>
+  <div
+    class="collection{% if section.settings.quick_add == 'bulk' %} collection-quick-add-bulk{% endif %} section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}"
+    id="collection-{{ section.id }}"
+    data-id="{{ section.id }}"
+  >
 
                               {%- for product in product_list  -%}
                               <img src="{{ product.featured_media | img_url: 'medium' }}" alt="{{ product.title }}" width="" height="">
                               {{ product.title }}
+                              
                               {%- endfor -%}
+  </div>
                             </li>
                           {%- endfor -%}
+  
                         </ul>
                       {%- endif -%}
                     </li>
