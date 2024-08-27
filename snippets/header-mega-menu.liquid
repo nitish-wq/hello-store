@@ -64,7 +64,7 @@
                                 {{ grandchildlink.title | escape }}
                               </a>
   
-                            <div class="grid product-grid contains-card contains-card--product"
+                            <div class="grid product-grid contains-card contains-card--product">
                               {%- for product in product_list  -%}
                               <img src="{{ product.featured_media | img_url: 'medium' }}" alt="{{ product.title }}" width="" height="">
                               {{ product.title }}
