@@ -7,7 +7,6 @@
 
 
 
-  {%- assign product_list = section.settings.product_list -%}
 
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
@@ -71,6 +70,15 @@
                       {%- endif -%}
                     </li>
                   {%- endfor -%}
+
+                  {%- assign collection_0 = section.settings.collection_0 -%}
+{{ collection_0.title }}
+{%- assign collection_0_products = collection_0.products -%}
+{%- for product in collection_0_products -%}
+  {{ product.title }}
+  {{ product.description }}
+{%- endfor -%}
+
                 </ul>
               </div>
             </details>
