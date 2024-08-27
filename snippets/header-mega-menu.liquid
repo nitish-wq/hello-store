@@ -5,8 +5,6 @@
   {% render 'header-mega-menu' %}
 {% endcomment %}
 
-
-
   {%- assign product_list = section.settings.product_list -%}
 
 <nav class="header__inline-menu">
@@ -71,18 +69,14 @@
                               <img src="{{ product.featured_media | image_url: width: '150px' }}" alt="{{ product.title }}" width="" height="">
                               {{ product.title }}
                                 <div class="price-container">
-                                  <span class="visually-hidden visually-hidden--inline">Regular price</span>
                                 <s class="price-item price-item--regular">{{ product.price }}</s>
-                                  <span class="visually-hidden visually-hidden--inline">Sale price</span>
-                                <span class="price-item price-item--regular"> {{ product.compare_at_price }} </span>
+                                <span class="price-item price-item--regular"> {{ product.compare_at_price }} </span
                                 </div>
                               
                               {%- endfor -%}
                             </div>
                             </li>
                           {%- endfor -%}
-
-                          
   
                         </ul>
                       {%- endif -%}
