@@ -73,6 +73,7 @@
              {%- assign product_list_0 = section.settings.product_list_0 -%}
 
           <div class="product_list" data-product-id="{{ product.id }}" data-product-handle="{{ product.handle }}" data-collection-handle="{{ product.collectionHandle }}">
+            <div class="card-wrapper product-card-wrapper underline-links-hover">
              {%- for product in product_list_0 -%}
                <a href="{{ product.url }}">
                    <div class="card__content">
@@ -81,11 +82,15 @@
               {{ product.title }}
              <img src="{{ product.featured_image | image_url: width:"200px" }}" alt="{{ product.title }}" width=" " height=" ">
             {{ product.description }}
-          </div>
+  
+         
                    </div>
                    </div>
+                   </div>
+                 
                </a>
             {%- endfor -%}  
+          </div>
           </div>
                     </li>
                         
