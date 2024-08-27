@@ -5,7 +5,6 @@
   {% render 'header-mega-menu' %}
 {% endcomment %}
 
-{%- assign product_list = section.settings.product_list -%}
 
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
@@ -64,9 +63,10 @@
                                 {{ grandchildlink.title | escape }}
                               </a>
 
+                              {%- assign product_list = section.settings.product_list -%}
+
                               {%- for product in product_list  -%}
                               {{ product.title }}
-                                
                               {%- endfor -%}
                            
                             </li>
