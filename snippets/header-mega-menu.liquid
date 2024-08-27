@@ -68,6 +68,7 @@
                               {%- for product in product_list  -%}
                               <img src="{{ product.featured_media | image_url: width: '150px' }}" alt="{{ product.title }}" width="" height="">
                               {{ product.title }}
+                              {{ product.price }}
                               {{ product.compare_at_price }}
                               
                               {%- endfor -%}
