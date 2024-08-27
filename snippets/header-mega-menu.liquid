@@ -75,8 +75,8 @@
 {{ collection_0.title }}
 {%- assign collection_0_products = collection_0.products -%}
 {%- for product in collection_0_products -%}
-  {{ product.title }}
-  {{ product.description }}
+ <img src="{{ collection.featured_image | img_url: '150x150' }}" alt="{{ product.title }}">
+
 {%- endfor -%}
 
                 </ul>
