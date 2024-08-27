@@ -66,7 +66,7 @@
   
                             <div class="grid product-grid contains-card contains-card--product">
                               {%- for product in product_list  -%}
-                              <img src="{{ product.featured_media | image_url: width: '150px' }}" alt="{{ product.title }}" width="" height="">
+            <img src="{{ product.featured_image | img_url: '150x150' }}" alt="{{ product.title }}">
                               {{ product.title }}
                                 <div class="price-container">
                                 <s class="price-item price-item--regular">{{ product.price }}</s>
