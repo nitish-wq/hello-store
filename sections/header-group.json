@@ -39,7 +39,8 @@
       "type": "header",
       "settings": {
         "product_list_0": [
-          "new-shirt"
+          "new-shirt",
+          "t-shirt"
         ],
         "logo_position": "middle-left",
         "menu": "main-menu",
