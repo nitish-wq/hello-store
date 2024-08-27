@@ -69,10 +69,10 @@
                                   <ul class="product-grid">
       {%- for product in collection.products limit: 5 -%}
         <li class="product-grid__item">
-          <a href="{{ product.url }}">
-            <img src="{{ product.featured_image | img_url: '150x150' }}" alt="{{ product.title }}">
-            <div>{{ product.title }}</div>
-            <div class="price">{{ product.price | money }}</div>
+          <a href="{{ product_list.url }}">
+            <img src="{{ product_list.featured_image | img_url: '150x150' }}" alt="{{ product.title }}">
+            <div>{{ product_list.title }}</div>
+            <div class="price">{{ product_list.price | money }}</div>
           </a>
         </li>
       {%- endfor -%}
