@@ -73,9 +73,6 @@
 
 {%- assign collection_list_0 = section.settings.collection_list_0 -%}
 
-                    {%- if collection.image -%}
-    <img src="{{ collection.image | img_url: '300x300' }}" alt="{{ collection.title }}">
-  {%- endif -%}
 
 {%- for collection in collection_list_0 -%}
   {{ collection.title }}
