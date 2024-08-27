@@ -75,9 +75,13 @@
           <div class="product_list" data-product-id="{{ product.id }}" data-product-handle="{{ product.handle }}" data-collection-handle="{{ product.collectionHandle }}">
              {%- for product in product_list_0 -%}
                <a href="{{ product.url }}">
+                   <div class="card__content">
+          <div class="card__information">  
              <img src="{{ product.featured_image | image_url: width:"200px" }}" alt="{{ product.title }}" width=" " height=" ">
             {{ product.title }}
             {{ product.description }}
+          </div>
+                   </div>
                </a>
             {%- endfor -%}  
           </div>
