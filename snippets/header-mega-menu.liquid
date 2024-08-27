@@ -62,9 +62,11 @@
                                 {% endif %}
                               >
                                 {{ grandchildlink.title | escape }}
-                              </a>
+                              </a>  
+                            </li>
+                          {%- endfor -%}
 
-                              {%- assign product_list_0 = section.settings.product_list_0 -%}
+{%- assign product_list_0 = section.settings.product_list_0 -%}
 {%- for product in product_list_0 -%}
               <img src="{{ product.featured_image | img_url: '150x150' }}" alt="{{ product.title }}">
 
@@ -73,10 +75,6 @@
 {%- endfor -%}
 
 
-  
-                            </li>
-                          {%- endfor -%}
-  
                         </ul>
                       {%- endif -%}
                     </li>
