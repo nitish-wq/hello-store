@@ -71,14 +71,11 @@
                     </li>
                   {%- endfor -%}
 
-{%- assign collection_list_0 = section.settings.collection_list_0 -%}
+                  {%- assign collection_0 = section.settings.collection_0 -%}
+{%- assign collection_0_products = collection_0.products -%}
+{%- for product in collection_0_products -%}
+ <img src="{{ collection_0.featured_image | img_url: '150x150' }}" alt="{{ product.title }}">
 
-
-{%- for collection in collection_list_0 -%}
-
-  {%- for product in collection.products -%}
-        <img src="{{  collection_list_0.featured_media | img_url: '300x300' }}" alt="{{ collection.title }}">
-  {%- endfor -%}
 {%- endfor -%}
 
                 </ul>
