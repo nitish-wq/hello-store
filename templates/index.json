@@ -315,6 +315,72 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "testimonials_Hge7f9": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_E8TKgC": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 4,
+            "title": "<p>Best product ever! Highly recommend.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "testimonial_VY6KVk": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "title": "<p>Best product ever! Highly recommend.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "testimonial_PxFP9G": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "title": "<p>Best product ever! Highly recommend.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "testimonial_gdpAjT": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "title": "<p>Best product ever! Highly recommend.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_E8TKgC",
+        "testimonial_VY6KVk",
+        "testimonial_PxFP9G",
+        "testimonial_gdpAjT"
+      ],
+      "settings": {
+        "title": "Testimonials",
+        "per_row": 2,
+        "video_style": "control_bar",
+        "desktop_display": "grid",
+        "mobile_display": "scroll",
+        "text_size": 100,
+        "heading_color": "#121212",
+        "text_color": "#121212",
+        "star_color": "#121212",
+        "play_button_color": "#ffffff",
+        "border_color": "#121212",
+        "border_width": 1,
+        "border_radius": 0,
+        "base_width": 95,
+        "max_width": "",
+        "inner_padding": 40,
+        "outer_margin": 0
+      }
     }
   },
   "order": [
@@ -322,6 +388,7 @@
     "image_banner_h44BAB",
     "featured-collection-0",
     "custom_image_with_text_ajKrA9",
-    "custom_slideshow_2_QPFdWh"
+    "custom_slideshow_2_QPFdWh",
+    "testimonials_Hge7f9"
   ]
 }
