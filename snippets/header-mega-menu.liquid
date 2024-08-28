@@ -49,10 +49,12 @@
           {% endcomment %}
               
                   <div
-                id="MegaMenu-Contents-{{ forloop.index }}"
-                class="mega-menu__content image-{{ section.settings.img }} gradient motion-reduce global-settings-popup"
-                tabindex="-1"
-              >
+  id="MegaMenu-Content-{{ forloop.index }}"
+  class="mega-menu__content"
+  style="background-image: url({{ section.settings.menu_background_image | image_url: width: "1440px" }});"
+  tabindex="-1"
+>
+
                 <ul
                   class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}"
                   role="list"
