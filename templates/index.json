@@ -373,7 +373,7 @@
       "settings": {
         "title": "Testimonials",
         "per_row": 4,
-        "video_style": "control_bar",
+        "video_style": "play_button",
         "desktop_display": "scroll",
         "mobile_display": "grid",
         "text_size": 80,
