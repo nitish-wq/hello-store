@@ -372,7 +372,7 @@
         "video_style": "control_bar",
         "desktop_display": "scroll",
         "mobile_display": "grid",
-        "text_size": 100,
+        "text_size": 80,
         "heading_color": "#121212",
         "text_color": "#121212",
         "star_color": "#393737",
