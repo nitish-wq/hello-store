@@ -374,7 +374,7 @@
         "title": "Testimonials",
         "per_row": 4,
         "video_style": "play_button",
-        "desktop_display": "scroll",
+        "desktop_display": "grid",
         "mobile_display": "grid",
         "text_size": 80,
         "heading_color": "#121212",
