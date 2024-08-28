@@ -322,6 +322,7 @@
         "testimonial_E8TKgC": {
           "type": "testimonial",
           "settings": {
+            "youtube_video": "",
             "star_rating": 4,
             "title": "<p>Best product ever! Highly recommend.<\/p>",
             "link_label": "",
@@ -331,6 +332,7 @@
         "testimonial_VY6KVk": {
           "type": "testimonial",
           "settings": {
+            "youtube_video": "",
             "star_rating": 5,
             "title": "<p>Best product ever! Highly recommend.<\/p>",
             "link_label": "",
@@ -340,6 +342,7 @@
         "testimonial_PxFP9G": {
           "type": "testimonial",
           "settings": {
+            "youtube_video": "",
             "star_rating": 5,
             "title": "<p>Best product ever! Highly recommend.<\/p>",
             "link_label": "",
@@ -349,6 +352,7 @@
         "testimonial_gdpAjT": {
           "type": "testimonial",
           "settings": {
+            "youtube_video": "",
             "star_rating": 5,
             "title": "<p>Best product ever! Highly recommend.<\/p>",
             "link_label": "",
@@ -367,7 +371,7 @@
         "per_row": 4,
         "video_style": "control_bar",
         "desktop_display": "scroll",
-        "mobile_display": "scroll",
+        "mobile_display": "grid",
         "text_size": 100,
         "heading_color": "#121212",
         "text_color": "#121212",
