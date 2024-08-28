@@ -376,7 +376,7 @@
         "border_color": "#121212",
         "border_width": 1,
         "border_radius": 16,
-        "base_width": 80,
+        "base_width": 100,
         "max_width": "1400px",
         "inner_padding": 40,
         "outer_margin": 5
