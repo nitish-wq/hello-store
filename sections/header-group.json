@@ -42,6 +42,7 @@
           "new-shirt",
           "t-shirt"
         ],
+        "img": "shopify:\/\/shop_images\/azalea2-winter23-lg.jpg",
         "logo_position": "middle-left",
         "menu": "main-menu",
         "menu_type_desktop": "mega",
