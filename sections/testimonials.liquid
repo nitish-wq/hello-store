@@ -1,3 +1,5 @@
+{%- assign widths = '180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 1950, 2100, 2260, 2450, 2700, 3000, 3350, 3750, 4100' -%}
+
 {%- if section.settings.max_width contains 'px' or section.settings.max_width contains '%' -%}
   {%- assign max_width = section.settings.max_width -%}
 {%- else -%}
@@ -465,6 +467,10 @@
   "name": "Testimonials - video",
   "class": "WP__testimonials-video",
   "settings": [
+     {
+        "type": "paragraph",
+        "content": "Support WebSensePro by [Subscribing our Channel](https:\/\/youtube.com\/@websensepro?sub_confirmation=1)"
+      },
     {
       "type": "text",
       "id": "title",
