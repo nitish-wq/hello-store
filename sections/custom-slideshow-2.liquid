@@ -1,3 +1,7 @@
+{%- liquid 
+  assign image = section.settings.image
+-%}
+
 <style>
     .swiper{
     display:flex;
@@ -38,7 +42,11 @@
             {% case block.type %}
                 {% when 'image' %}
                     <div class="swiper-slide">
-                        <img src="{{ block.settings.image | image_url: width: '260px' }}" alt="Image" class="image-with-text__image" width="260px" height="">
+        {% if image != blank %}
+          <img src="{{ image | image_url: width: '150px', height: heights[forloop.index0] }}" alt="{{ section.settings.title }}" width="150px" height="{{ heights[forloop.index0] }}">
+        {% else %}
+           {{ 'collection-1' | placeholder_svg_tag }}
+        {% endif %}
                             <div class="image-text">
                                 <p>{{ block.settings.image_text }}</p>
                             </div>          
