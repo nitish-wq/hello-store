@@ -42,11 +42,11 @@
             {% case block.type %}
                 {% when 'image' %}
                     <div class="swiper-slide">
-        {% if image != blank %}
-          <img src="{{ image | image_url: width: '150px' }}" alt="{{ section.settings.title }}" width="150px" }}">
-        {% else %}
-           {{ 'collection-1' | placeholder_svg_tag }}
-        {% endif %}
+                    {% if image != blank %}
+                    <img src="{{ image | image_url: width: '150px' }}" alt="{{ section.settings.title }}" width="150px" }}">
+                      {% else %}
+                   {{ 'collection-1' | placeholder_svg_tag }}
+                   {% endif %}
                             <div class="image-text">
                                 <p>{{ block.settings.image_text }}</p>
                             </div>          
