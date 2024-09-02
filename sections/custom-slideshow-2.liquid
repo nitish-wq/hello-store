@@ -43,7 +43,7 @@
                 {% when 'image' %}
                     <div class="swiper-slide">
                     {% if image != blank %}
-                    <img src="{{ image | image_url: width: '150px' }}" alt="{{ section.settings.title }}" width="150px" }}">
+            <img src="{{ image | image_url }}" alt="{{ image.alt }}"  width="" height="">
                       {% else %}
                    {{ 'collection-1' | placeholder_svg_tag }}
                    {% endif %}
