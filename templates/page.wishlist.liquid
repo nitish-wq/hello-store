@@ -17,7 +17,7 @@
   <div class="wishlist-grid flex">
     {% paginate collections.all.products by 9999 %}
       {% for product in collections.all.products %}
-     {% render 'product-tile', product: collections.all.products.first %}
+     {% render 'product-tile', product: collections.all.products.first, product: product %}
 
       {% endfor %}
     {% endpaginate %}
