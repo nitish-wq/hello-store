@@ -57,7 +57,7 @@
         {% endif %}
       </div>
       <div class="product-tile--tile-actions flex">
-        {% render 'wishlist-button'%}
+        {% include 'wishlist-button'%}
         <div class="cart-button">
         <a class="action--quick-cart tile-actions--btn flex cart-btn" href="/cart/add?id={{ product.selected_or_first_available_variant.id }}&quantity=1">Add To Cart</a>
         </div>
