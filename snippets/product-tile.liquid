@@ -49,7 +49,8 @@
         <p class="text--title black">{{ product.title }}</p>
         {% if product.compare_at_price > product.price %}
           <p class="text--price">
-            <span class="price--compare strike-through">{{ product.compare_at_price | money }}</span> <span class="price--sale">{{ product.price | money }}</span>
+            <span class="price--compare strike-through">{{ product.compare_at_price | money }}</span> 
+            <span class="price--sale">{{ product.price | money }}</span>
           </p>
         {% else %}  
           <p class="text--price">{{ product.price | money }}</p>
