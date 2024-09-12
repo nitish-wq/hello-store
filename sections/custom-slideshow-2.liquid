@@ -36,31 +36,51 @@
 
 
 <div class="slideshow-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
-<div class="swiper">
-    <div class="swiper-wrapper">
-        {%- for block in section.blocks -%}
-            {% case block.type %}
-                {% when 'image' %}
-                    <div class="swiper-slide">
-                    {% if image != blank %}
-                 <img src="{{ image | image_url }}" alt="{{ image.alt }}"  width="200" height="200">
-                      {% else %}
-                   {{ 'collection-1' | placeholder_svg_tag }}
-                   {% endif %}
-                            <div class="image-text">
-                                <p>{{ block.settings.image_text }}</p>
-                            </div>          
-                    </div>
-            {% endcase %}
-                {%- endfor -%}
-    </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination">{% render 'icon-arrow' %}</div>
-    <!-- Add Navigation -->
-    <div class="swiper-next-button">{% render 'icon-arrow' %}</div>
-</div>
-</div>
+    <div class="swiper">
+<div class="slideshow-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            {%- for block in section.blocks -%}
+                {% case block.type %}
+                    {% when 'image' %}
+                        <div class="swiper-slide">
+                            {% if block.settings.image != blank %}
+                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt }}" width="200" height="200">
+                            {% else %}
+                                {{ 'collection-1' | placeholder_svg_tag }}
+                            {% endif %}
 
+                            {%- if block.settings.star_rating != -1 or block.settings.title != blank or block.settings.image != blank or block.settings.link_label != blank -%}
+                                <div class="wbs__inner-content">
+                                    {%- if block.settings.star_rating != -1 -%}
+                                        <div class="wbs__stars">
+                                            {%- for i in (1..5) -%}
+                                                <div class="wbs__star">
+                                                    {%- if i <= block.settings.star_rating -%}
+                                                        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M5.2 18a.8.8 0 01-.792-.914l.743-5.203-2.917-2.917a.8.8 0 01.434-1.355l4.398-.733 2.218-4.435a.8.8 0 011.435.008l2.123 4.361 4.498.801a.8.8 0 01.425 1.353l-2.917 2.917.744 5.203a.8.8 0 01-1.154.828l-4.382-2.22-4.502 2.223A.792.792 0 015.2 18z" fill="#5C5F62"/>
+                                                        </svg>
+                                                    {%- else -%}
+                                                        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M6.71 15.116l3.357-1.658.892.452 2.327 1.178-.56-3.912.708-.707 1.29-1.29-3.235-.576-.445-.915-1.059-2.176L8.4 8.683l-1.005.168-2.098.35 1.975 1.975-.141.99-.422 2.95zM5.2 18a.8.8 0 01-.792-.914l.743-5.203-2.917-2.917a.8.8 0 01.434-1.355l4.398-.733 2.218-4.435a.8.8 0 011.435.008l2.123 4.361 4.498.801a.8.8 0 01.425 1.353l-2.917 2.917.744 5.203a.8.8 0 01-1.154.828l-4.382-2.22-4.502 2.223A.792.792 0 015.2 18z" fill="#5C5F62"/>
+                                                        </svg>
+                                                    {%- endif -%}
+                                                </div>
+                                            {%- endfor -%}
+                                        </div>
+                                    {%- endif -%}
+                                </div>
+                            {%- endif -%}
+                        </div>
+                {% endcase %}
+            {%- endfor -%}
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-next-button">{% render 'icon-arrow' %}</div>
+    </div>
+</div>
 
 
 <script>
