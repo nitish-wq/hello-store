@@ -1,3 +1,6 @@
+{%- liquid 
+  assign image = section.settings.image
+-%}
 
 <style>
     .swiper{
@@ -14,18 +17,6 @@
   .swiper-next-button{
     color:black
   }
-
-    .swiper-slide img,
-  .swiper-slide svg {
-    display: block;
-    width: 546px;
-    object-fit: cover;
-  }
-
-  .swiper-slide svg {
-    background-color: #DADADA;
-  }
-
 </style>
 
 
@@ -51,8 +42,8 @@
             {% case block.type %}
                 {% when 'image' %}
                     <div class="swiper-slide">
-                    {% if block.settings.image != blank %}
-                 <img src="{{ block.settings.image  | image_url }}" alt="{{block.settings.image.alt }}"  width="200" height="200">
+                    {% if image != blank %}
+                 <img src="{{ image | image_url }}" alt="{{ image.alt }}"  width="200" height="200">
                       {% else %}
                    {{ 'collection-1' | placeholder_svg_tag }}
                    {% endif %}
