@@ -15,7 +15,7 @@
   </div>
   <!-- Product Tile Grid -->
   <div class="wishlist-grid flex">
-    {% paginate collections.all.products by 9999 %}
+    {% paginate collections.all.products by 50 %}
       {% for product in collections.all.products %}
      {% render 'product-tile', product: collections.all.products.first, product: product %}
 
