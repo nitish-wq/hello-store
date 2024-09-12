@@ -73,19 +73,26 @@
 
 
 <script>
-    var swiper = new Swiper(".swiper", {
-        slidesPerView: 5,
-       spaceBetween: 5, 
-        freeMode: true,
-        loop: true,
-        navigation: {
-            nextEl: ".swiper-next-button",
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'vertical',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
 </script>
 
 
