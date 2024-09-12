@@ -18,7 +18,6 @@
     {% paginate collections.all.products by 50 %}
       {% for product in collections.all.products %}
      {% render 'product-tile', product: collections.all.products.first, product: product %}
-
       {% endfor %}
     {% endpaginate %}
     <div class="wishlist-grid--empty-list flex">
