@@ -17,7 +17,7 @@
   <div class="wishlist-grid flex">
 
       {% for product in collections.all.products %}
-        {% include 'product-tile' %}
+        {% render 'product-tile' %}
       {% endfor %}
    
     <div class="wishlist-grid--empty-list flex">
